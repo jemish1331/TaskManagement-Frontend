@@ -4,7 +4,7 @@ export const HttpService = async (type, url, body) => {
   if (type && url && body) {
     const res = await axios({
       method: type,
-      url: "https://taskmanagement123.herokuapp.com" + url,
+      url: process.env.REACT_APP_BACKENDURL + url,
       data: body,
       headers: {},
     });

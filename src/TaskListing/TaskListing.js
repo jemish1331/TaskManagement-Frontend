@@ -1,14 +1,14 @@
-import { Modal, Tabs } from "antd";
+import { Tabs } from "antd";
 import React, { useEffect, useState } from "react";
 import { HttpService } from "../common/function";
 import { TaskCreation } from "../TaskCreation/TaskCreation";
 import { TaskComponent } from "./TaskComponent";
-import { StickyContainer, Sticky } from "react-sticky";
 import "../index.css";
 const { TabPane } = Tabs;
 
 export const TaskListing = () => {
   const [taskList, setTaskList] = useState([]);
+  const [loader, setLoader] = useState(false);
   const [isModalVisible, setIsMOdalVisible] = useState(false);
   const [type, setType] = useState("subtask");
   const [parentTaskID, setParentTaskID] = useState("");
