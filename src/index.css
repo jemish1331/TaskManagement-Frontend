@@ -8,8 +8,8 @@ body {
 }
 .task {
   text-align: center;
-  font-family: cursive;
-  font-size: 24px;
+  /* font-family: cursive; */
+  /* font-size: 24px; */
   border: 10px solid black;
   padding: 2rem 1rem;
   min-height: 3em;
@@ -30,4 +30,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.ant-tabs-nav-list {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 20;
+}
+.ant-tabs-tab {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+}
+.ant-tabs-tab-active {
+  background-color: lightblue;
 }
